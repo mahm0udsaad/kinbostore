@@ -48,7 +48,7 @@ export default function CollectionPage() {
               {section.items.length === 1 ? "piece" : "pieces"}
             </span>
           </div>
-          <div className="mt-6 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
+          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
             {section.items.map((product, i) => (
               <ProductCard key={product.slug} product={product} priority={i < 2} />
             ))}
